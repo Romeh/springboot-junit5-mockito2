@@ -4,6 +4,7 @@ package io.romeh.junit.SpringBootJunit5Mockito2;
 import static io.romeh.junit.SpringBootJunit5Mockito2.services.TextService.ORIGINAL_OUTPUT;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ public class SpringBootJunit5IntegrationTest {
 	private ShowService showService;
 
 	@Test
+	@DisplayName("Integration test which will get the actual output of text service")
 	public void contextLoads() {
 		assertEquals(showService.getShowLable(), ORIGINAL_OUTPUT);
 	}
