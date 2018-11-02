@@ -9,9 +9,3 @@ Show case for how to use junit 5 and mockito 2 for unit testing and integration 
 - Junit 5
 - Mockito 2
 -------------------
-### How to compile and install:
-it is a maven project , so just clean and install and should be ready ! 
-```sh
-mvn clean install 
-```
--------------------
